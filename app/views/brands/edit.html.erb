@@ -1,0 +1,49 @@
+<div class="flex flex-col items-end">
+  <div class="flex flex-col space-y-14 w-full">
+    <div class="flex flex-col space-y-8 w-1/2">
+      <div class="flex flex-col space-y-2">
+        <div class="flex items-center space-x-1">
+          <label for="unique-name" class="font-medium text-sm">Unique Name</label>
+          <span class="cursor-help"><%= icon('info') %></span>
+        </div>
+        <input id="unique-name" class="bg-gray-50 border-gray-300 text-sm rounded-lg px-4 py-3" type="text" value="Olga Ri">
+      </div>
+
+      <div class="flex flex-col space-y-2 text-sm">
+        <div class="flex items-center space-x-1">
+          <label for="exhibition-name" class="font-medium text-sm">Exhibition Name</label>
+          <span class="cursor-help"><%= icon('info') %></span>
+        </div>
+        <input id="exhibition-name" class="bg-gray-50 border-gray-300 text-sm rounded-lg px-4 py-3" type="text" value="Olga Ri">
+      </div>
+
+      <div class="flex flex-col space-y-2 text-sm">
+        <div class="flex items-center space-x-1">
+          <label for="color" class="font-medium text-sm">Color</label>
+          <span class="cursor-help"><%= icon('info') %></span>
+        </div>
+        <input id="color" class="bg-gray-50 border-gray-300 text-sm rounded-lg px-4 py-3" type="text" value="#F9CA07">
+      </div>
+    </div>
+
+    <hr class="bg-gray-200">
+
+    <div class="flex flex-col space-y-6">
+      <div class="flex items-center space-x-1">
+        <p class="font-semibold">Active</p>
+        <span class="cursor-help"><%= icon('info') %></span>
+      </div>
+      <label for="active" class="flex items-center cursor-pointer">
+        <div class="relative">
+          <input type="checkbox" id="active" class="sr-only peer">
+          <div class="block bg-gray-300 peer-checked:bg-primary-700 w-10 h-[21px] rounded-full"></div>
+          <div class="dot absolute left-1 top-[2px] bg-white w-4 h-4 rounded-full transition peer-checked:translate-x-full"></div>
+        </div>
+      </label>
+    </div>
+  </div>
+  <div class="flex space-x-4">
+    <button class="bg-transparent border border-primary-700 text-primary-700 px-3 py-2 text-sm font-medium rounded-lg">Cancelar</button>
+    <button class="bg-primary-700 border text-white px-3 py-2 text-sm font-medium rounded-lg">Continuar</button>
+  </div>
+</div>
