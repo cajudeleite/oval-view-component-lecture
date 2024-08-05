@@ -60,6 +60,7 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem "lookbook", ">= 2.3.2"
 end
 
 group :test do
@@ -69,3 +70,4 @@ group :test do
 end
 
 gem 'tailwindcss-rails'
+gem "view_component"

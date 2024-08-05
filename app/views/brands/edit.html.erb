@@ -1,29 +1,9 @@
 <div class="flex flex-col items-end">
   <div class="flex flex-col space-y-14 w-full">
     <div class="flex flex-col space-y-8 w-1/2">
-      <div class="flex flex-col space-y-2">
-        <div class="flex items-center space-x-1">
-          <label for="unique-name" class="font-medium text-sm">Unique Name</label>
-          <span class="cursor-help"><%= icon('info') %></span>
-        </div>
-        <input id="unique-name" class="bg-gray-50 border-gray-300 text-sm rounded-lg px-4 py-3" type="text" value="Olga Ri">
-      </div>
-
-      <div class="flex flex-col space-y-2 text-sm">
-        <div class="flex items-center space-x-1">
-          <label for="exhibition-name" class="font-medium text-sm">Exhibition Name</label>
-          <span class="cursor-help"><%= icon('info') %></span>
-        </div>
-        <input id="exhibition-name" class="bg-gray-50 border-gray-300 text-sm rounded-lg px-4 py-3" type="text" value="Olga Ri">
-      </div>
-
-      <div class="flex flex-col space-y-2 text-sm">
-        <div class="flex items-center space-x-1">
-          <label for="color" class="font-medium text-sm">Color</label>
-          <span class="cursor-help"><%= icon('info') %></span>
-        </div>
-        <input id="color" class="bg-gray-50 border-gray-300 text-sm rounded-lg px-4 py-3" type="text" value="#F9CA07">
-      </div>
+      <%= render InputComponent.new(label_text: 'Unique Name', id: 'unique-name', value: 'Olga Ri') %>
+      <%= render InputComponent.new(label_text: 'Exhibition Name', id: 'exhibition-name', value: 'Olga Ri') %>
+      <%= render InputComponent.new(label_text: 'Color', id: 'color', value: '#F9CA07') %>
     </div>
 
     <hr class="bg-gray-200">
