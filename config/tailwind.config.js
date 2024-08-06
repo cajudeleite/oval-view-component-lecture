@@ -6,6 +6,7 @@ module.exports = {
     "./app/helpers/**/*.rb",
     "./app/javascript/**/*.js",
     "./app/views/**/*.{erb,haml,html,slim}",
+    "./app/components/**/*.{erb,haml,html,slim}",
   ],
   theme: {
     extend: {
@@ -15,6 +16,11 @@ module.exports = {
       colors: {
         primary: {
           700: "#1A56DB",
+        },
+        gray: {
+          400: "#9CA3AF",
+          500: "#6B7280",
+          700: "#374151",
         },
       },
     },

@@ -1,0 +1,31 @@
+<div class="flex flex-col w-60 bg-white p-3 space-y-6">
+  <%= render SidebarItemComponent.new(text: 'Home', icon: 'home', path: '') %>
+  <hr>
+  <%= render HeadingAndListComponent.new(heading: 'Live Ops', items: [
+    { text: 'Gestão de Stock Out', icon: 'archive', path: '' },
+    { text: 'Raios e Horários', icon: 'map-pin-alt', path: '' }
+  ]) %>
+  <%= render HeadingAndListComponent.new(heading: 'Global Settings', items: [
+    { text: 'Brands', icon: 'palette', path: brands_path },
+    { text: 'Location Groups', icon: 'map-pin', path: '' }
+  ]) %>
+  <%# TODO transformar elemento abaixo em dropdown %>
+  <div class="flex items-center space-x-3">
+    <div class="w-6 h-6 rounded-full bg-yellow-500"></div>
+    <p class="font-semibold grow">Olga Ri</p>
+    <%= icon('chevron-sort') %>
+  </div>
+  <%= render HeadingAndListComponent.new(heading: 'Olga Ri Settings', items: [
+    { text: 'Menu Items', icon: 'bag', path: '' },
+    { text: 'Modifier Group', icon: 'edit', path: '' },
+    { text: 'Preference Group', icon: 'swatchbook', path: '' },
+    { text: 'Corridors', icon: 'rectangle-list', path: '' },
+    { text: 'Locations', icon: 'store', path: '' },
+    { text: 'Menus', icon: 'clipboard', path: '' },
+    { text: 'SKU for Recipe', icon: 'tag', path: '' },
+  ]) %>
+  <div class="flex flex-col space-y-4">
+    <%= render SidebarItemComponent.new(text: 'Settings', icon: 'cog', path: '', variant: 'footer') %>
+    <%= render SidebarItemComponent.new(text: 'Help & getting started', icon: 'life-buoy', path: '', variant: 'footer') %>
+  </div>
+</div>

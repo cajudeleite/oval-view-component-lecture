@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'up' => 'rails/health#show', as: :rails_health_check
 
   # Defines the root path route ("/")
-  root 'brands#edit', as: :brands
+  get 'brands', to: 'brands#edit', as: :brands
 end

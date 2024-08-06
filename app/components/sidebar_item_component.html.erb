@@ -1,0 +1,4 @@
+<%= button_to @path, class: "w-full flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg #{ 'text-sm text-gray-500 py-0' if @variant == 'footer'} #{ 'bg-gray-100' if current_page?(@path) }" do %>
+  <span class="w-4 <%= current_page?(@path) ? 'fill-black' : 'fill-gray-400' %>"><%= helpers.icon(@icon) %></span>
+  <p class="font-medium"><%= @text %></p>
+<% end %>

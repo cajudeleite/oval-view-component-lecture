@@ -1,4 +1,4 @@
-<div class="flex flex-col items-end">
+<div class="h-full flex flex-col items-end justify-between">
   <div class="flex flex-col space-y-14 w-full">
     <div class="flex flex-col space-y-8 w-1/2">
       <%= render InputComponent.new(label_text: 'Unique Name', id: 'unique-name', value: 'Olga Ri') %>
@@ -23,7 +23,7 @@
     </div>
   </div>
   <div class="flex space-x-4">
-    <button class="bg-transparent border border-primary-700 text-primary-700 px-3 py-2 text-sm font-medium rounded-lg">Cancelar</button>
-    <button class="bg-primary-700 border text-white px-3 py-2 text-sm font-medium rounded-lg">Continuar</button>
+    <%= render ButtonComponent.new(text: 'Cancelar', variant: 'secondary') %>
+    <%= render ButtonComponent.new(text: 'Continuar') %>
   </div>
 </div>
