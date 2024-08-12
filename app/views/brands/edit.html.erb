@@ -4,6 +4,7 @@
       <%= render InputComponent.new(label_text: 'Unique Name', id: 'unique-name', value: 'Olga Ri') %>
       <%= render InputComponent.new(label_text: 'Exhibition Name', id: 'exhibition-name', value: 'Olga Ri') %>
       <%= render InputComponent.new(label_text: 'Color', id: 'color', value: '#F9CA07') %>
+      <select name="test" id="test"></select>
     </div>
 
     <hr class="bg-gray-200">
@@ -23,7 +24,7 @@
     </div>
   </div>
   <div class="flex space-x-4">
-    <%= render ButtonComponent.new(text: 'Cancelar', variant: 'secondary') %>
-    <%= render ButtonComponent.new(text: 'Continuar') %>
+    <button class="btn-secondary">Cancelar</button>
+    <button class="btn-primary">Continuar</button>
   </div>
 </div>

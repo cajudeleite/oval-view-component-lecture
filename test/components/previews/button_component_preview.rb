@@ -2,10 +2,10 @@
 
 class ButtonComponentPreview < ViewComponent::Preview
   def primary
-    render(ButtonComponent.new(text: "Text"))
+    render_with_template(template: 'button/primary')
   end
 
   def secondary
-    render(ButtonComponent.new(text: "Text", variant: "secondary"))
+    render_with_template(template: 'button/secondary')
   end
 end

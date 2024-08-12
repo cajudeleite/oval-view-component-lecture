@@ -6,6 +6,6 @@ class InputComponentPreview < ViewComponent::Preview
   end
 
   def without_label
-    render(InputComponent.new(id: 'id', value: 'Value'))
+    render_with_template(template: 'input/without_label')
   end
 end
