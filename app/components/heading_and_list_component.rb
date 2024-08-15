@@ -6,5 +6,4 @@ class HeadingAndListComponent < ViewComponent::Base
     @items = items
     @with_divider = with_divider
   end
-
 end
